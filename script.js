@@ -27,17 +27,17 @@ noBtn.addEventListener("click", () => {
   card.classList.add("shake");
   setTimeout(() => card.classList.remove("shake"), 400);
 
-  question.textContent = "Are you sure? 😠💔";
+  question.textContent = "Are you sure bubu? 😭💔";
   document.body.style.background =
-    "linear-gradient(135deg, #ff4d6d, #c9184a)";
+    "linear-gradient(135deg, #ffd1de, #ff91e2)";
 
   // Move & shrink No button
   const x = Math.random() * 200 - 100;
   const y = Math.random() * 200 - 100;
   noBtn.style.transform = `translate(${x}px, ${y}px) scale(${1 - noCount * 0.1})`;
 
-  if (noCount > 3) {
-    question.textContent = "You can't escape 😈💘";
+  if (noCount > 2) {
+    question.textContent = "Mai ho la timro k kaa No ne yes press gara😈💘";
   }
 });
 
